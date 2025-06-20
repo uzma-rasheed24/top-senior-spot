@@ -1,6 +1,6 @@
 import { Routes, Route } from "react-router-dom";
-import NotFoundPage from "../pages/NotFoundPage";
 import { WebsiteRoutes } from "./WebsiteRoutes";
+import NotFoundPage from "../pages/NotFoundPage";
 
 const Router = () => {
   return (
