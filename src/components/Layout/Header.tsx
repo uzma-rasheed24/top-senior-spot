@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Search, Menu, X, ChevronDown, Facebook, Linkedin, Instagram } from "lucide-react";
+import TopBar from "./TopBar";
 // Navigation types
 interface NavigationItem {
   label: string;
@@ -74,7 +75,7 @@ const Header = ({ isMobileMenuOpen, setIsMobileMenuOpen }: HeaderProps) => {
   return (
     <>
       {/* Top Bar with Date and Social */}
-      <div className="bg-blue-500 text-white text-sm py-2">
+      {/* <div className="bg-blue-500 text-white text-sm py-2">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between items-center">
           <span>Thursday, May 08, 2025</span>
           <div className="flex space-x-3">
@@ -83,7 +84,8 @@ const Header = ({ isMobileMenuOpen, setIsMobileMenuOpen }: HeaderProps) => {
             <Instagram className="h-4 w-4 cursor-pointer hover:opacity-80" />
           </div>
         </div>
-      </div>
+      </div> */}
+      < TopBar />
 
       {/* Main Header */}
       <header className="bg-white shadow-sm border-b sticky top-0 z-50">
